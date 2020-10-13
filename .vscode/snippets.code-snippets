@@ -1,0 +1,17 @@
+{
+  "Basic template": {
+    "scope": "cpp",
+    "prefix": "i",
+    "body": [
+      "#include <iostream>",
+      "",
+      "using namespace std;",
+      "",
+      "int main() {",
+      "\t$0",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "Sets up a basic cpp file template"
+  }
+}
