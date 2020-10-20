@@ -8,9 +8,9 @@
       "command": "C:\\Program Files\\CodeBlocks\\MinGW\\bin\\g++.exe",
       "args": [
         "-g",
-        "${file}",
+        "'${relativeFileDirname}\\${fileBasename}'",
         "-o",
-        "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
+        "'bin\\${fileBasenameNoExtension}.exe'"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
@@ -19,9 +19,9 @@
       "presentation": {
         "echo": true,
         "focus": false,
-        "panel": "shared",
+        "panel": "dedicated",
         "showReuseMessage": false,
-        "clear": false
+        "clear": true
       }
     },
     {
@@ -31,7 +31,11 @@
         "kind": "test",
         "isDefault": true
       },
-      "command": "g++ ${fileBasenameNoExtension}.cpp -o bin\\${fileBasenameNoExtension}.exe; .\\bin\\${fileBasenameNoExtension}.exe",
+      "dependsOn": ["Build"],
+      "command": ". \"bin\\${fileBasenameNoExtension}.exe\"",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
       "problemMatcher": [],
       "presentation": {
         "echo": true,
