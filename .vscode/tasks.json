@@ -5,7 +5,7 @@
       "label": "Build",
       "type": "shell",
       "group": "build",
-      "command": "C:\\Program Files\\CodeBlocks\\MinGW\\bin\\g++.exe",
+      "command": "g++.exe",
       "args": [
         "-g",
         "'${relativeFileDirname}\\${fileBasename}'",
