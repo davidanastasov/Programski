@@ -1,0 +1,48 @@
+int main()
+{
+    // Deklariranje na promenlivi za site 1000 broevi
+    int broj0;
+    int broj1;
+    int broj2;
+    .
+    .
+    int broj999;
+  
+  	// Vnesuvanje na 1000 broevi (eden po eden)
+    cin >> broj0;
+    cin >> broj1;
+    cin >> broj2;
+    .
+    .
+    cin >> broj999;
+  
+    // Pecatenje na broevite vo obraten redosled
+    // broj999 - broj0
+    cout << broj999 << endl;
+    cout << broj998 << endl;
+    cout << broj997 << endl;
+    .
+    .
+    cout << broj0 << endl;
+
+    return 0;
+}
+
+# Verzija so nizi
+int main()
+{
+  	// Deklariranje na niza so golemina 1000
+    int niza[1000];
+  
+  	// Vnesuvanje na 1000 broevi (eden po eden)
+    for (int i = 0; i < 1000; i++) {
+        cin >> niza[i];
+    }
+    
+    // Pecatenje na broevite od nizata vo obraten redosled
+    for (int i = 999; i >= 0; i--) {
+        cout << niza[i] << endl;
+    }
+
+    return 0;
+}
