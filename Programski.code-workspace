@@ -7,7 +7,8 @@
   "settings": {
     "files.associations": {
       "*.cpp": "cpp",
-      "iostream": "cpp"
+      "iostream": "cpp",
+      "ostream": "cpp"
     }
   }
 }
